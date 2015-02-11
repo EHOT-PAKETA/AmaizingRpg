@@ -32,20 +32,6 @@ public class SaveLoad {
     }
 
     public Hero loadCharacter(Hero hero) throws IOException, ClassNotFoundException {
-
-//        File[] fileList;
-//        File file = new File("c:/AMAIZING RPG/savedata/");
-//        fileList = file.listFiles();
-//        System.out.println("Choose your saved character:");
-//        for (int i = 0; i < fileList.length; i++) {
-//            if (fileList[i].isFile()) {
-//                
-//                System.out.println(i + 1 + " - " + fileList[i].getName());
-//                
-//
-//            }
-//
-//        }
         ObjectInputStream oos = new ObjectInputStream(new FileInputStream("c:/AMAIZING RPG/savedata/hero1"));
         hero = (Hero) oos.readObject();
         return hero;
