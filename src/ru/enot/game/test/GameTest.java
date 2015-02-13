@@ -22,10 +22,10 @@ public class GameTest {
 
     public static void main(String[] agrs) throws IOException, ClassNotFoundException {
 
-//        GameCycleManager gameManager = new GameCycleManager();
-//       gameManager.startGame();
+        GameCycleManager gameManager = new GameCycleManager();
+       gameManager.startGame();
 
-       test();
+//       test();
     }
 
     private static void test() {

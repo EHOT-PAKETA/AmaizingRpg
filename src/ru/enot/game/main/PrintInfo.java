@@ -4,11 +4,11 @@ import ru.enot.game.objects.Hero;
 import ru.enot.game.resources.ConsoleGameIO;
 import ru.enot.game.resources.GameIO;
 
-public class PrintHeroInfo {
+public class PrintInfo {
 
     private GameIO gameIO;
 
-    public void PrintHeroInfo(Hero hero, String status) {
+    public void printHeroInfo(Hero hero, String status) {
         gameIO = new ConsoleGameIO();
         gameIO.cleanMessages();
         gameIO.printlnMessage("----------------------------");
@@ -25,6 +25,15 @@ public class PrintHeroInfo {
         gameIO.printlnMessage("Damage: " + hero.getDamage());
         gameIO.printlnMessage("----------------------------");
 
+    }
+
+    public void printStartGameInfo() {
+        gameIO = new ConsoleGameIO();
+        gameIO.printlnMessage("**** AMAZING RPG******");
+        gameIO.printlnMessage("1 - Start new game");
+        gameIO.printlnMessage("2 - Load game");
+        gameIO.printlnMessage("3 - Exit");
+        gameIO.printMessage("Enter your choise: ");
     }
 
 }
