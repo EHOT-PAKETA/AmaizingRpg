@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.enot.game.graphics.MainWindowController">
+   <children>
+      <Button layoutX="251.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#exitGame" prefHeight="25.0" prefWidth="99.0" text="Exit" />
+      <Button layoutX="251.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#startGame" text="Start new game" />
+      <Button layoutX="251.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#loadGame" prefHeight="25.0" prefWidth="99.0" text="Load game" />
+      <Label fx:id="infoLabel" alignment="CENTER" layoutX="210.0" layoutY="80.0" prefHeight="68.0" prefWidth="180.0" text="Label" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

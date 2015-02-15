@@ -3,10 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/IMAC/Documents/NetBeansProjects/AmaizingRpg/src/ru/enot/game/main/SaveLoad.java</file>
-            <file>file:/C:/Users/IMAC/Documents/NetBeansProjects/AmaizingRpg/src/ru/enot/game/main/PrintHeroInfo.java</file>
+            <file>file:/C:/Users/IMAC/Documents/NetBeansProjects/AmaizingRpg/src/ru/enot/game/main/PrintInfo.java</file>
+            <file>file:/C:/Users/IMAC/Documents/NetBeansProjects/AmaizingRpg/src/ru/enot/game/objects/Hero.java</file>
+            <file>file:/C:/Users/IMAC/Documents/NetBeansProjects/AmaizingRpg/src/ru/enot/game/graphics/MainWindowController.java</file>
+            <file>file:/C:/Users/IMAC/Documents/NetBeansProjects/AmaizingRpg/src/ru/enot/game/graphics/NewGameWindow.fxml</file>
+            <file>file:/C:/Users/IMAC/Documents/NetBeansProjects/AmaizingRpg/src/ru/enot/game/resources/GraphicGameIO.java</file>
             <file>file:/C:/Users/IMAC/Documents/NetBeansProjects/AmaizingRpg/src/ru/enot/game/test/GameTest.java</file>
             <file>file:/C:/Users/IMAC/Documents/NetBeansProjects/AmaizingRpg/src/ru/enot/game/main/GameCycleManager.java</file>
+            <file>file:/C:/Users/IMAC/Documents/NetBeansProjects/AmaizingRpg/src/ru/enot/game/resources/GameIO.java</file>
+            <file>file:/C:/Users/IMAC/Documents/NetBeansProjects/AmaizingRpg/src/ru/enot/game/graphics/MainWindow.fxml</file>
+            <file>file:/C:/Users/IMAC/Documents/NetBeansProjects/AmaizingRpg/src/ru/enot/game/main/SaveLoad.java</file>
+            <file>file:/C:/Users/IMAC/Documents/NetBeansProjects/AmaizingRpg/src/ru/enot/game/graphics/NewGameWindowController.java</file>
+            <file>file:/C:/Users/IMAC/Documents/NetBeansProjects/AmaizingRpg/src/ru/enot/game/objects/utils/GameException.java</file>
+            <file>file:/C:/Users/IMAC/Documents/NetBeansProjects/AmaizingRpg/src/ru/enot/game/resources/ConsoleGameIO.java</file>
+            <file>file:/C:/Users/IMAC/Documents/NetBeansProjects/AmaizingRpg/src/ru/enot/game/graphics/ScreenChangeableController.java</file>
+            <file>file:/C:/Users/IMAC/Documents/NetBeansProjects/AmaizingRpg/src/ru/enot/game/test/RandomTest.java</file>
+            <file>file:/C:/Users/IMAC/Documents/NetBeansProjects/AmaizingRpg/src/ru/enot/game/graphics/FXMainClass.java</file>
         </group>
     </open-files>
 </project-private>

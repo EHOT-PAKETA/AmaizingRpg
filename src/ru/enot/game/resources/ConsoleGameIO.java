@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import ru.enot.game.graphics.NewGameWindowController;
 
 /**
  *
@@ -17,13 +18,16 @@ import java.util.logging.Logger;
 public class ConsoleGameIO implements GameIO {
 
     private Scanner scanner;
+    
 
     public ConsoleGameIO() {
         scanner = new Scanner(System.in);
+        
     }
 
     @Override
     public void printlnMessage(String messge) {
+       //NewGameWindowController.label.setText(messge);
         System.out.println(messge);
     }
 

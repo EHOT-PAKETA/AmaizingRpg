@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.enot.game.graphics.NewGameWindowController">
+   <children>
+      <TextField layoutX="226.0" layoutY="188.0" />
+      <ChoiceBox layoutX="225.0" layoutY="163.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

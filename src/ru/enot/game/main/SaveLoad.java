@@ -13,6 +13,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
@@ -34,7 +35,7 @@ public class SaveLoad {
     private DirectoryStream<Path> savedFiles;
 
     public SaveLoad() {
-
+        gameIO = new ConsoleGameIO();
     }
 
     public void saveCharacter(Hero hero, String fileName) throws IOException {
@@ -44,17 +45,12 @@ public class SaveLoad {
     }
 
     public Hero loadCharacter(Hero hero) throws IOException, ClassNotFoundException {
-        gameIO = new ConsoleGameIO();
+        
         gameIO.cleanMessages();
         do {
             savedFiles = Files.newDirectoryStream(SAVE_FILE_PATH, "*.save");
             savedFilesList = new ArrayList<>();
             int i = 0;
-//            if (!savedFiles.iterator().hasNext()){
-//                gameIO.printlnMessage("Sorry... No character to load!");
-//                gameIO.printlnMessage("Try to start new game.");
-//                System.exit(0);
-//            }
             gameIO.printlnMessage("Loading characters....");
             for (Path p : savedFiles) {
                 String fileName = p.getFileName().toString();
@@ -63,12 +59,18 @@ public class SaveLoad {
                 gameIO.printlnMessage("[" + (i + 1) + "] - " + savedFilesList.get(i));
                 i++;
             }
+            if (savedFilesList.isEmpty()) {
+                gameIO.printlnMessage("Sorry... No character to load!");
+                gameIO.printlnMessage("Try to start new game.");
+                System.exit(0);
+            }
             gameIO.printMessage("Enter your choise: ");
             choise = gameIO.readInt();
             if (choise < 1 || choise > savedFilesList.size()) {
                 gameIO.cleanMessages();
                 gameIO.printlnMessage("Error! Available choise from 1 to " + savedFilesList.size() + "!");
                 gameIO.printlnMessage("Try again ...");
+                gameIO.printlnMessage("----------------------------");
             }
         } while (choise < 1 || choise > savedFilesList.size());
         ObjectInputStream oos = new ObjectInputStream(new FileInputStream(SAVE_FILE_PATH + "\\" + savedFilesList.get(choise - 1) + ".save"));
